@@ -27,3 +27,17 @@ npm run dev
 - TypeScript
 - React
 - Tailwind CSS
+
+## Publicar en GitHub Pages (estático)
+
+El sitio puede exportarse como HTML estático (prerender de `/` y `sitemap.xml`):
+
+```sh
+npm run build:static          # salida en dist/client
+PAGES_BASE=/mi-repo/ npm run build:static   # si es un "project page"
+```
+
+El workflow `.github/workflows/deploy-pages.yml` hace esto automáticamente en cada push a `main`
+y publica `dist/client` en GitHub Pages. Activa Pages en Settings → Pages → Source: GitHub Actions.
+
+Nota: en modo estático no hay servidor (sin server functions ni SSR dinámico).
