@@ -22,7 +22,7 @@ export default defineConfig({
     ...(isStaticExport ? {} : { server: { entry: "server" } }),
     ...(isStaticExport
       ? {
-          prerender: { enabled: true, crawlLinks: true },
+          prerender: { enabled: true, crawlLinks: false },
           pages: [{ path: "/" }, { path: "/sitemap.xml" }],
         }
       : {}),
