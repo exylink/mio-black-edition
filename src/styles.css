@@ -32,7 +32,7 @@
   --color-ring: var(--ring);
   --color-silver: var(--silver);
   --color-graphite: var(--graphite);
-  --font-display: "Instrument Serif", Georgia, serif;
+  --font-display: "Inter Tight", system-ui, sans-serif;
   --font-sans: "Inter Tight", system-ui, sans-serif;
 }
 
