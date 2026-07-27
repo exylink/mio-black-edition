@@ -81,6 +81,15 @@
     overflow-x: hidden;
   }
 
+  .font-display,
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: -0.035em;
+  }
+
   ::selection {
     background: oklch(1 0 0 / 90%);
     color: #050505;
