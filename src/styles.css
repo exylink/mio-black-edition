@@ -32,12 +32,12 @@
   --color-ring: var(--ring);
   --color-silver: var(--silver);
   --color-graphite: var(--graphite);
-  --font-display: "Instrument Serif", Georgia, serif;
+  --font-display: "Inter Tight", system-ui, sans-serif;
   --font-sans: "Inter Tight", system-ui, sans-serif;
 }
 
 :root {
-  --radius: 0.25rem;
+  --radius: 1rem;
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.185 0 0);
@@ -79,6 +79,15 @@
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
+  }
+
+  .font-display,
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: -0.035em;
   }
 
   ::selection {
