@@ -136,7 +136,7 @@ function Landing() {
                 }}
               />
               <div
-                className="hairline relative overflow-hidden rounded-2xl"
+                className="hairline relative overflow-hidden rounded-3xl"
                 style={{ boxShadow: "var(--shadow-lift)" }}
               >
                 <img
@@ -221,7 +221,7 @@ function Landing() {
             <ol className="relative mt-16 grid gap-px sm:grid-cols-2 lg:grid-cols-3">
               {flujo.map((f, i) => (
                 <Reveal key={f.t} delay={i * 100} as="li">
-                  <div className="surface h-full rounded-lg p-7 transition-colors duration-700 hover:border-white/25">
+                  <div className="surface h-full rounded-2xl p-7 transition-colors duration-700 hover:border-white/25">
                     <div className="flex items-baseline gap-3">
                       <span className="font-display text-silver/40 text-sm">
                         {String(i + 1).padStart(2, "0")}
@@ -279,7 +279,7 @@ function Landing() {
             <div className="mt-16 grid gap-8 lg:grid-cols-[1.35fr_1fr]">
               <Reveal>
                 <div
-                  className="hairline animate-float-soft overflow-hidden rounded-xl"
+                  className="hairline animate-float-soft overflow-hidden rounded-3xl"
                   style={{ boxShadow: "var(--shadow-lift)" }}
                 >
                   <img
@@ -294,7 +294,7 @@ function Landing() {
               </Reveal>
               <Reveal delay={150}>
                 <div
-                  className="hairline animate-float-soft flex h-full items-center justify-center overflow-hidden rounded-xl"
+                  className="hairline animate-float-soft flex h-full items-center justify-center overflow-hidden rounded-3xl"
                   style={{ boxShadow: "var(--shadow-lift)", animationDelay: "1.4s" }}
                 >
                   <img
@@ -320,7 +320,7 @@ function Landing() {
             <div className="mt-14 grid gap-6 lg:grid-cols-3">
               {razones.map((r, i) => (
                 <Reveal key={r.t} delay={i * 120}>
-                  <div className="surface h-full rounded-xl p-9 transition-all duration-700 hover:-translate-y-1 hover:border-white/25">
+                  <div className="surface h-full rounded-3xl p-9 transition-all duration-700 hover:-translate-y-1 hover:border-white/25">
                     <div className="h-10 w-px bg-gradient-to-b from-white/60 to-transparent" />
                     <h3 className="font-display mt-7 text-2xl leading-snug text-white">{r.t}</h3>
                     <p className="text-silver/55 mt-4 text-sm leading-relaxed">{r.d}</p>
@@ -358,7 +358,7 @@ function Landing() {
             </Reveal>
             <Reveal delay={150}>
               <div
-                className="hairline overflow-hidden rounded-xl"
+                className="hairline overflow-hidden rounded-3xl"
                 style={{ boxShadow: "var(--shadow-lift)" }}
               >
                 <img
