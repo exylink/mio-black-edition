@@ -15,7 +15,7 @@ export default defineConfig({
   vite: {
     base,
   },
-  ...(isStaticExport ? { nitro: { preset: "static" as const } } : {}),
+  ...(isStaticExport ? { nitro: false as const } : {}),
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this (skipped for the static export).
